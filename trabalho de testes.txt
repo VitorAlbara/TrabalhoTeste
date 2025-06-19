@@ -1,0 +1,15 @@
+Testes unitarios
+1. Deve cadastrar um novo usuário e retornar seu token
+2. Deve lançar um erro ao tentar cadastrar um e-mail que já existe
+3. Deve realizar o login do usuário e retornar seu token'
+4. Deve lançar um erro se o usuário não for encontrado durante o login
+5. Deve lançar um erro se a senha estiver incorreta durante o login
+6. Deve retornar os dados do usuário com base no seu identificador
+7. Deve lançar um erro se o usuário com o ID fornecido não for encontrado
+8. Deve retornar dados do usuário com base no ID extraído do token
+9. Deve retornar um novo token se o token antigo for válido
+10. Deve lançar um erro se o token antigo for inválido ou expirado
+
+Testes de integração
+1.Registro de Novo Usuário( garante que o endpoint de registro (POST /api/auth/register) funciona corretamente, criando um usuário no banco de dados e retornando os dados esperados.).
+2. Criação de Nova Tarefa(testa a autenticação, pois o endpoint de criação de tarefas é protegido. Para isso, "mockamos" (simulamos) o middleware de autenticação para que ele nos forneça um usuário autenticado durante o teste.).
