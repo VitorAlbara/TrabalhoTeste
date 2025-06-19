@@ -1,4 +1,3 @@
-# language: pt
 Feature: Edição de Tarefas
   Como um usuário autenticado
   Eu quero poder editar minhas tarefas existentes
